@@ -1,0 +1,1 @@
+select title from movies where genre in('Romance','Sci-Fi') group by title having COUNT(title) > 1;

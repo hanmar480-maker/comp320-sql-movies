@@ -1,0 +1,1 @@
+select * from movies m where (select Count(*) from movies where genre = m.genre AND Worldwide > m.Worldwide)< (select 0.2 * Count(*) from movies where genre = m.genre);
